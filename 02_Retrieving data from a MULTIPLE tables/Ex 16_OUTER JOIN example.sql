@@ -3,7 +3,7 @@ SELECT
     c.first_name,
     o.order_id
 FROM customers c
-LEFT JOIN orders o
+LEFT JOIN orders o --  Ini berarti semua baris dari tabel customers akan tetap ditampilkan, bahkan jika tidak ada padanan di tabel orders
 	ON c.customer_id = o.customer_id
 ORDER BY c.customer_id;
 
